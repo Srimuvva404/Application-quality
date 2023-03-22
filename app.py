@@ -7,7 +7,7 @@ def hello_world():
     return 'Hello, Test!'
 @app.route('/number/<int:n>')
 def check_number(n):
-    if n > 100:
+    if n > 200:
         message = 'high'
     else:
         message = 'low'
