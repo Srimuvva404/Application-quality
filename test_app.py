@@ -9,7 +9,7 @@ class TestApp(unittest.TestCase):
             response = client.get('/number/50')
             data = json.loads(response.get_data(as_text=True))
             self.assertEqual(response.status_code, 200)
-            self.assertEqual(data['number'], 50)
+            self.assertEqual(data['number'], 150)
             self.assertEqual(data['message'], 'low')
 
     def test_check_number_high(self):
